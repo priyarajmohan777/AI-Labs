@@ -49,7 +49,8 @@ app.launch(share=True)
 
 https://352a80ed64654063e9.gradio.live/
 
-![image](https://github.com/user-attachments/assets/a6a3a436-852c-4141-bae3-4ae6d1b8c5fb)
+![image](https://github.com/user-attachments/assets/2b652215-c532-4993-be9a-4546b4d57445)
+
 
 
 
