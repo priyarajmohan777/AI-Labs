@@ -21,19 +21,6 @@ Construct the FOL representation for the following sentences <br>
 5.	 Bill eats peanuts  <br> 
    Convert into clause form and Prove that John like Apple by using Prolog. <br> 
 ### Program:
-
-
-### Output:
-
-### Task 2:
-Consider the following facts and represent them in predicate form: <br>              
-1.	Steve likes easy courses. <br> 
-2.	Science courses are hard. <br> 
-3. All the courses in Have fun department are easy <br> 
-4. BK301 is Have fun department course.<br> 
-Convert the facts in predicate form to clauses and then prove by resolution: “Steve likes BK301 course”<br> 
-
-### Program:
 ```
 likes(john,X):-
  food(X).
@@ -50,10 +37,14 @@ food(peanuts).
 ### Output:
 ![image](https://github.com/user-attachments/assets/edc254bf-61d4-4007-b89d-5c6e3d6229de)
 
-### Task 3:
-Consider the statement <br> 
-“This is a crime for an American to sell weapons to hostile nations. The Nano , enemy of America has some missiles and its missiles were sold it by Colonal West who is an American” <br> 
-Convert to Clause form and prove west is criminal by using Prolog.<br> 
+### Task 2:
+Consider the following facts and represent them in predicate form: <br>              
+1.	Steve likes easy courses. <br> 
+2.	Science courses are hard. <br> 
+3. All the courses in Have fun department are easy <br> 
+4. BK301 is Have fun department course.<br> 
+Convert the facts in predicate form to clauses and then prove by resolution: “Steve likes BK301 course”<br> 
+
 ### Program:
 ```
 likes(steve,X):-
@@ -66,6 +57,33 @@ course(bk301,dept(havefun)).
 
 ### Output:
 ![image](https://github.com/user-attachments/assets/d754e5d3-d040-4d09-bff8-55f4019889e4)
+### Task 3:
+Consider the statement <br> 
+“This is a crime for an American to sell weapons to hostile nations. The Nano , enemy of America has some missiles and its missiles were sold it by Colonal West who is an American” <br> 
+Convert to Clause form and prove west is criminal by using Prolog.<br> 
+
+### Program:
+```
+ american(X),
+ weapon(Y),
+ hostile(Z),
+ sells(X,Y,Z).
+weapon(Y):-
+ missile(Y).
+hostile(Z):-
+ enemy(Z,X).
+sells(west,Y,nano):-
+ missile(Y),
+ owns(nano,Y).
+missile(m).
+owns(nano,m).
+enemy(nano,america).
+american(west). 
+```
+
+### Output:
+![image](https://github.com/user-attachments/assets/1fbdfa64-c390-4a6f-9a89-f0d88da00d6a)
+
 
 ### Result:
 Thus the prolog programs were executed successfully and the answer of query was found.
