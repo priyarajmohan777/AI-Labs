@@ -175,7 +175,8 @@ disp.plot()
 
 ### Output:
 
-![image](https://github.com/user-attachments/assets/128ccb14-221f-46ca-8b33-828c66d994a7)
+![image](https://github.com/user-attachments/assets/a6cb90c3-19c5-4903-bbb8-c2c984409518)
+
 
 
 ### Result:
