@@ -5,12 +5,17 @@
 To build and evaluate a machine learning model for predicting a target outcome based on given input features.
 ###  Algorithm:
 1.Import the dataset, clean, and normalize it for analysis.
+
 2. Identify and select key features relevant to the target prediction.
+
 3. Choose an appropriate machine learning model (e.g., Logistic Regression, LightGBM, etc.).
+
 4. Train the selected model using the training dataset.
+
 5. Evaluate the model performance using metrics such as accuracy, precision, recall, and AUC-ROC.
+
 6.Interpret the model's predictions and visualize the outcomes with relevant graphs.
-Result (One-line):
+
         
 
 ### Program:
@@ -39,7 +44,6 @@ df.shape
 from wolta.data_tools import col_types
 
 types = col_types(df, print_columns=True)
-
 
 from wolta.data_tools import seek_null
 
@@ -116,16 +120,12 @@ from wolta.data_tools import stat_sum
 stat_sum(df,
         ['max', 'min', 'width', 'var', 'med'])
 
-
 df['person_neoplasm_cancer_status'].value_counts().plot(kind='pie')
-
 
 y = df['person_neoplasm_cancer_status'].values
 del df['person_neoplasm_cancer_status']
 X = df.values
 del df
-
-
 
 from sklearn.model_selection import train_test_split
 
@@ -136,7 +136,6 @@ from collections import Counter
 
 print(Counter(y_train))
 print(Counter(y_test))
-
 
 from wolta.model_tools import compare_models
 
@@ -165,13 +164,6 @@ disp = cmd(confusion_matrix=cm, display_labels=outs)
 disp.plot()
 
 ```
-
-
-
-
-
-
-
 
 ### Output:
 
