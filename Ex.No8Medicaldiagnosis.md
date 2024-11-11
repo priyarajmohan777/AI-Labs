@@ -1,5 +1,5 @@
 # Ex.No: 10  Logic Programming –  Medical Diagnosis Expert System
-### DATE:                                                                            
+### DATE:     23/09/24                                                                       
 ### REGISTER NUMBER : 212222040124
 ### AIM: 
 Write a Prolog program to build a medical Diagnosis Expert System.
