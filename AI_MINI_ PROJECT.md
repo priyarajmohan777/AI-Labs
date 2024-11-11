@@ -1,5 +1,5 @@
-# AI MINI PROJECT - Esophageal Cancer Prediction
-### DATE:                                                            
+# Ex: 13 AI MINI PROJECT - Esophageal Cancer Prediction
+### DATE:   04/11/24                                                         
 ### REGISTER NUMBER : 212222040124
 ### AIM: 
 To develop a machine learning model for the early prediction of esophageal cancer using a comprehensive clinical dataset, focusing on patient demographics, tumor histology, staging, and treatment history. 
